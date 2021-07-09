@@ -53,21 +53,23 @@
           <div class="row row-grid">
 
               <!--Start looping div here-->
-              <div class="col-lg-4">
+              <div class="col-lg-4"  *ngFor="let badge of BadgesList">
                 <div class="card card-lift--hover shadow border-0">
                   <div class="card-body py-5">
                     <div>
                       <!-- <i class="ni ni-check-bold"></i> -->
-                      <img src="./assets/img/brand/argon-white.png" width="350" height="">
+                      <img src="{{badge.digital_badge}}" width="100" height="">
                     </div>
-                    <h6 class="text-primary text-uppercase"> ISACA CYBERSECURITYX FUNDAMENTAL</h6>
-                    <p class="description mt-3">Description About ISACA CERT</p>
+                    <h6 class="text-primary text-uppercase">{{badge.Badge_name}}</h6>
+                    <!-- <p class="description mt-3">{{badge.Description}}</p> -->
                     <div>
-                      <span class="badge badge-pill badge-primary">angular</span>
-                      <span class="badge badge-pill badge-primary">ng-bootstrap</span>
-                      <span class="badge badge-pill badge-primary">creative</span>
+                      <span class="badge badge-pill badge-primary">{{badge.Issuer}}</span>
+                      <span class="badge badge-pill badge-primary">{{badge.Date_Issued}}</span>
+                      <span class="badge badge-pill badge-warning" *ngFor="let item of badge.Description">
+                        {{item.skill}}
+                      </span>
                     </div>
-                    <a href="javascript:void(0)" class="btn btn-primary mt-4">Learn more</a>
+                    <a href="{{badge.Credential_Url}}" class="btn btn-primary mt-4">Credential Link</a>
                   </div>
                 </div>
               </div>

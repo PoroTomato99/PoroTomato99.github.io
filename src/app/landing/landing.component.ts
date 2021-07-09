@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import DigitalBadge from 'src/app/01JsonObject/Badges.json';
 
 @Component({
     selector: 'app-landing',
@@ -11,7 +12,9 @@ export class LandingComponent implements OnInit {
   focus1: any;
 
   constructor() { }
-
-  ngOnInit() {}
+  BadgesList : any;
+  ngOnInit() {
+    this.BadgesList = DigitalBadge;
+  }
 
 }

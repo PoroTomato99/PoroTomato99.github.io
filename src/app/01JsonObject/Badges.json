@@ -1,0 +1,16 @@
+[
+    {
+        "Badge_name": "Cybersecurity Fundamentals Certificate",
+        "Credential_Url" :"https://www.credly.com/badges/927db107-aff5-431c-a0ba-49767b8a9f47",
+        "Issuer" :"ISACA",
+        "Date_Issued":"2019/09/15",
+        "Description":[
+            {"skill":"Cyber Security"},
+            {"skill":"Information Security Analyst"},
+            {"skill":"IT Network Security"},
+            {"skill":"Web Penetration Testing"}
+        ],
+        "digital_badge":"./assets/img/Profile/isaca_csx.png"
+
+    }
+]

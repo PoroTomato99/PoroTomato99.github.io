@@ -1,0 +1,17 @@
+[
+    {
+        "school_name": "Tunku Abdul Rahman University College",
+        "key" :"TARUC",
+        "level" :"Degree",
+        "course":"Information Security",
+        "description":"Studied about cybersecurity, networking, penetration testing and programming"
+    },
+
+    {
+        "school_name":"Tunku Abdul Rahman University College",
+        "key":"TARUC",
+        "level":"Diploma",
+        "course":"Information Technology",
+        "description":"More on fundamental of IT knowledge, programming, networking and Web Development."
+    }
+]
