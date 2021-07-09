@@ -1,0 +1,87 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+  <div class="container">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
+      Poro Tomato
+    </a>
+
+    <!--button when mobile view-->
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a [routerLink]="['/home']">
+              <!--image need to chg-->
+              <!-- <img src="./assets/img/brand/blue.png"> -->
+              Directories
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text font-weight-bold">HEY CLICK HERE!</span>
+          </a>
+          <div class="dropdown-menu">
+            <a [routerLink]="['/landing']" class="dropdown-item">Portfolio</a>
+            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
+          </div>
+        </li>
+      </ul>
+
+
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Check out my profile on LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="nav-link-inner--text d-lg-none">Linkedin</span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Follow me on Instagram">
+            <i class="fab fa-instagram"></i>
+            <span class="nav-link-inner--text d-lg-none">Instagram</span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Follow me on Twitter">
+            <i class="fab fa-twitter-square"></i>
+            <span class="nav-link-inner--text d-lg-none">Twitter</span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-navbar" target="_blank" data-toggle="tooltip" title="CHeck out my GitHub">
+            <i class="fab fa-github"></i>
+            <span class="nav-link-inner--text d-lg-none">Github</span>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
