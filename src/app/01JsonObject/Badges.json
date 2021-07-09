@@ -10,7 +10,7 @@
             {"skill":"IT Network Security"},
             {"skill":"Web Penetration Testing"}
         ],
-        "digital_badge":"./assets/img/Profile/isaca_csx.png"
+        "digital_badge":"assets/img/Profile/isaca_csx.png"
 
     }
 ]
