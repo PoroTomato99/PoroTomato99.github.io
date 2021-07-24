@@ -13,7 +13,7 @@ const routes: Routes =[
     { path: 'home',             component: HomeComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: '', redirectTo: 'home', pathMatch: 'full' }
+    { path: '', redirectTo: 'user-profile', pathMatch: 'full' }
 ];
 
 @NgModule({

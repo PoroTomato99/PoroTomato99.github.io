@@ -7,14 +7,14 @@
         <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
 
       </div>
-      <div class="col-lg-6 text-lg-center btn-wrapper">
-        <a target="_blank" href="#" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
+      <div class="col-lg-6 text-lg-center btn-wrapper" *ngFor ="let item of SocialLinks">
+        <a target="_blank" href="{{item.SocialLinks.Twitter}}" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
           <i class="fab fa-twitter"></i>
         </a>
-        <a target="_blank" href="#" class="btn btn-neutral btn-icon-only  btn-linkedin btn-lg btn-round" ngbTooltip="Follow us">
+        <a target="_blank" href="{{item.SocialLinks.LinkedIn}}" class="btn btn-neutral btn-icon-only  btn-linkedin btn-lg btn-round" ngbTooltip="Follow us">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a target="_blank" href="#" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
+        <a target="_blank" href="{{item.SocialLinks.GitHub}}" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
           <i class="fab fa-github"></i>
         </a>
       </div>

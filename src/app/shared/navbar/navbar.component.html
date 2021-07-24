@@ -12,7 +12,7 @@
 
 
 
-    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed" *ngFor="let item of SocialList">
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
@@ -50,7 +50,7 @@
 
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Check out my profile on LinkedIn">
+          <a class="nav-link nav-link-icon" href="{{item.SocialLinks.LinkedIn}}" target="_blank" data-toggle="tooltip" title="Check out my profile on LinkedIn">
             <i class="fab fa-linkedin-in"></i>
             <span class="nav-link-inner--text d-lg-none">Linkedin</span>
           </a>
@@ -58,15 +58,7 @@
 
 
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Follow me on Instagram">
-            <i class="fab fa-instagram"></i>
-            <span class="nav-link-inner--text d-lg-none">Instagram</span>
-          </a>
-        </li>
-
-
-        <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Follow me on Twitter">
+          <a class="nav-link nav-link-icon" href="{{item.SocialLinks.Twitter}}" target="_blank" data-toggle="tooltip" title="Follow me on Twitter">
             <i class="fab fa-twitter-square"></i>
             <span class="nav-link-inner--text d-lg-none">Twitter</span>
           </a>
@@ -74,13 +66,11 @@
 
 
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-navbar" target="_blank" data-toggle="tooltip" title="CHeck out my GitHub">
+          <a class="nav-link nav-link-icon" href="{{item.SocialLinks.GitHub}}" target="_blank" data-toggle="tooltip" title="CHeck out my GitHub">
             <i class="fab fa-github"></i>
             <span class="nav-link-inner--text d-lg-none">Github</span>
           </a>
         </li>
-
-
       </ul>
     </div>
   </div>

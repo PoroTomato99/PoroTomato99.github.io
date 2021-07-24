@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { Location, PopStateEvent } from '@angular/common';
+import SocialLinks from 'src/app/01JsonObject/SocialLink.json';
 
 @Component({
     selector: 'app-navbar',
@@ -15,7 +16,10 @@ export class NavbarComponent implements OnInit {
     constructor(public location: Location, private router: Router) {
     }
 
+    SocialList:any;
     ngOnInit() {
+        this.SocialList = SocialLinks;
+
       this.router.events.subscribe((event) => {
         this.isCollapsed = true;
         if (event instanceof NavigationStart) {

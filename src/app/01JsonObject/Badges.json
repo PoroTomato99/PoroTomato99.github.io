@@ -1,16 +1,68 @@
 [
     {
-        "Badge_name": "Cybersecurity Fundamentals Certificate",
+        "Badge_name": "Cybersecurity Fundamentals",
         "Credential_Url" :"https://www.credly.com/badges/927db107-aff5-431c-a0ba-49767b8a9f47",
         "Issuer" :"ISACA",
-        "Date_Issued":"2019/09/15",
+        "Date_Issued":"Sep 15, 2019",
         "Description":[
             {"skill":"Cyber Security"},
-            {"skill":"Information Security Analyst"},
+            {"skill":"InfoSec Analyst"},
             {"skill":"IT Network Security"},
             {"skill":"Web Penetration Testing"}
         ],
-        "digital_badge":"assets/img/Profile/isaca_csx.jpg"
+        "digital_badge":"assets/img/badges/isaca_csx.jpg"
+    },
+    {
+        "Badge_name":"Google Cloud Essentials",
+        "Credential_Url":"https://www.qwiklabs.com/public_profiles/3a62f608-e5b9-4269-927a-21cba9afe810/badges/1121417",
+        "Issuer":"QwikLabs",
+        "Date_Issued":"Jul 10, 2021",
+        "Description":[
+            {"skill":"Creating VM"},
+            {"skill":"Cloud Shell"},
+            {"skill":"Kubernetes Engine"},
+            {"skill":"HTTP Load Balancer"}
+        ],
+        "digital_badge":"assets/img/badges/gcloud_essential.jpg"
+    },
+    {
+        "Badge_name":"Security On AWS",
+        "Credential_Url":"https://www.qwiklabs.com/public_profiles/3a62f608-e5b9-4269-927a-21cba9afe810/badges/1121417",
+        "Issuer":"QwikLabs",
+        "Date_Issued":"Jul 16, 2021",
+        "Description":[
+            {"skill":"IAM Basics"},
+            {"skill":"AWS Web App Firewall"},
+            {"skill":"Security Groups"},
+            {"skill":"Logs"}
+        ],
+        "digital_badge":"assets/img/badges/Security_on_Aws.jpg"
+    },
+    {
+        "Badge_name":"Deploy to Kubernetes in Google Cloud",
+        "Credential_Url":"https://www.qwiklabs.com/public_profiles/3a62f608-e5b9-4269-927a-21cba9afe810/badges/1121417",
+        "Issuer":"QwikLabs",
+        "Date_Issued":"Jul 23, 2021",
+        "Description":[
+            {"skill":"Docker"},
+            {"skill":"Kubernestes"},
+            {"skill":"Containerized"},
+            {"skill":"Continuos Deliveries Jenkins"}
 
+        ],
+        "digital_badge":"assets/img/badges/deploy_to_kubernetes_GoogleCloud.jpg"
+    },
+    {
+        "Badge_name":"Security & Identity Fundamentals",
+        "Credential_Url":"https://www.qwiklabs.com/public_profiles/3a62f608-e5b9-4269-927a-21cba9afe810/badges/1121417",
+        "Issuer":"QwikLabs",
+        "Date_Issued":"Jul 24, 2021",
+        "Description":[
+            {"skill":"Google Cloud IAM"},
+            {"skill":"Network Security"},
+            {"skill":"Packet Mirroring"},
+            {"skill":"Identity-Aware Proxy"}
+        ],
+        "digital_badge":"assets/img/badges/Security_&_Identity_Fundamentels.jpg"
     }
 ]
